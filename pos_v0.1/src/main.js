@@ -1,7 +1,7 @@
 function printInventory(inputs){
     var goodsArray = new Array(),total = 0;
-    for (var i = 0;i<inputs.length;i++){
-        insertGoods(inputs[i],goodsArray);
+    for(x in inputs){
+        insertGoods(inputs[x],goodsArray);
     }
     var out = "***<没钱赚商店>购物清单***\n";
     for(x in goodsArray){
